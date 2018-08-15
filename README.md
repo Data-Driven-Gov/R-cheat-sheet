@@ -5,6 +5,8 @@ see wiki page for documentation [link](https://github.com/rocker-org/rocker/wiki
 ```bash
 docker run -it --rm -p 8787:8787 rocker/ropensci:latest <<optional_command>>
 #optionally, add parameters to configure: username, password, working directory, root privileges, etc
+
+-v 'path/to/machine/dir:path/to/container/dir'
 ```
 Then in browser, go to:  http://127.0.0.1:8787 . (default un/pw = 'rstudio')
 
