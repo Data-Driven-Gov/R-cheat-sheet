@@ -3,8 +3,11 @@
 ### Start Docker
 see wiki page for documentation [link](https://github.com/rocker-org/rocker/wiki)
 ```bash
-docker run -it --remove -p 8787:8787 rocker/ropensci:latest <<optional_command>>
+docker run -it --rm -p 8787:8787 rocker/ropensci:latest <<optional_command>>
+#optionally, add parameters to configure: username, password, working directory, root privileges, etc
 ```
+Then in browser, go to:  http://127.0.0.1:8787 . (default un/pw = 'rstudio')
+
 explannation of above: 
  - `run`: run a container
  - `-i` : interactive mod (will relay messages from the virtual container to your host terminal
